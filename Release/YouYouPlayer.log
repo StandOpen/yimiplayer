@@ -1,0 +1,48 @@
+﻿生成启动时间为 2012/8/6 14:37:20。
+     1>项目“F:\材料\功能测试\增加功能\新建文件夹\新建文件夹\新建文件夹\YouYouPlayer\YouYouPlayer.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Release\YouYouPlayer.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Release\YouYouPlayer.pch" /Fo".\Release\\" /Fd".\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         D:\Program Files\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Release\YouYouPlayer.pch" /Fo".\Release\\" /Fd".\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt IsMiniDlg.cpp LrcDlg.cpp MulitLineListBox.cpp MyButton.cpp MyListBox.cpp MyMemDC.cpp MySlider.cpp YouYouPlayer.cpp YouYouPlayerDlg.cpp
+         IsMiniDlg.cpp
+         LrcDlg.cpp
+         MulitLineListBox.cpp
+         MyButton.cpp
+     1>MyButton.cpp(219): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(219): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(219): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(221): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(221): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(222): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(225): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(225): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(225): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(226): error C2065: “i”: 未声明的标识符
+     1>MyButton.cpp(226): error C2228: “.DeleteObject”的左边必须有类/结构/联合
+         MyListBox.cpp
+         MyMemDC.cpp
+         MySlider.cpp
+         YouYouPlayer.cpp
+     1>YouYouPlayer.cpp(52): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+                 D:\Program Files\VC\atlmfc\include\afxwin.h(5344) : 参见“CWinApp::Enable3dControls”的声明
+         YouYouPlayerDlg.cpp
+     1>YouYouPlayerDlg.cpp(139): error C2440: “static_cast”: 无法从“void (__thiscall CYouYouPlayerDlg::* )(WPARAM,LPARAM)”转换为“LRESULT (__thiscall CWnd::* )(WPARAM,LPARAM)”
+                 在匹配目标类型的范围内没有具有该名称的函数
+     1>YouYouPlayerDlg.cpp(201): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>YouYouPlayerDlg.cpp(940): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>YouYouPlayerDlg.cpp(1239): error C2664: “CFile::CFile(ATL::CAtlTransactionManager *)”: 不能将参数 1 从“int”转换为“ATL::CAtlTransactionManager *”
+                 从整型转换为指针类型要求 reinterpret_cast、C 样式转换或函数样式转换
+     1>YouYouPlayerDlg.cpp(1392): error C2660: “CWnd::AnimateWindow”: 函数不接受 3 个参数
+     1>YouYouPlayerDlg.cpp(1517): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files\VC\include\string.h(105) : 参见“strcpy”的声明
+         正在生成代码...
+     1>已完成生成项目“F:\材料\功能测试\增加功能\新建文件夹\新建文件夹\新建文件夹\YouYouPlayer\YouYouPlayer.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:05.55

@@ -1,0 +1,284 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\YouYouPlayer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\音乐.ico"
+IDI_VOICE               ICON    DISCARDABLE     "res\\喇叭.ico"
+IDI_VOICE2              ICON    DISCARDABLE     "res\\喇叭2.ico"
+IDI_STOP1               ICON    DISCARDABLE     "res\\20120804100411164_easyicon_cn_48.ico"
+IDI_DOWN1               ICON    DISCARDABLE     "res\\20120804100358978_easyicon_cn_48.ico"
+IDI_PAUSE1              ICON    DISCARDABLE     "res\\20120804100401770_easyicon_cn_48.ico"
+IDI_PLAY1               ICON    DISCARDABLE     "res\\20120804100403566_easyicon_cn_48.ico"
+IDI_UP1                 ICON    DISCARDABLE     "res\\20120804100407259_easyicon_cn_48.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 一米音乐"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "一米音乐 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,173,31,50,14,WS_GROUP
+END
+
+IDD_YOUYOUPLAYER_DIALOG DIALOGEX 0, 0, 391, 272
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "Static",IDC_SONGNAME,37,3,216,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,36,17,302,
+                    6
+    LTEXT           "Static",IDC_TIME,342,15,48,12,SS_NOTIFY
+    PUSHBUTTON      "上一曲",IDC_UPSONG,52,27,20,20,BS_ICON
+    DEFPUSHBUTTON   "播放",IDC_PLAY,120,27,20,20,BS_ICON
+    DEFPUSHBUTTON   "下一曲",IDC_DOWNSONG,183,26,20,20,BS_ICON
+    DEFPUSHBUTTON   "停止",IDC_STOP,253,26,20,20,BS_ICON
+    LISTBOX         IDC_SONGLIST,0,78,391,167,LBS_SORT | 
+                    LBS_OWNERDRAWVARIABLE | LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_BORDER | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加歌曲",IDC_ADD,47,253,50,14
+    PUSHBUTTON      "添加文件夹",IDC_ADDMORE,113,254,50,14
+    PUSHBUTTON      "删除歌曲",IDC_REMOVE,181,253,50,14
+    PUSHBUTTON      "隐藏列表",IDC_MUSICLIST,3,60,50,12
+    PUSHBUTTON      "更换皮肤",IDC_SKIN,77,59,50,12
+    PUSHBUTTON      "设置记忆点",IDC_SETMEMORY,225,57,50,12
+    COMBOBOX        IDC_MEMORY,299,57,68,68,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "显示歌词",IDC_LRC,151,57,50,14
+    CONTROL         "是否保持在最顶端",IDC_TOPWND,"Button",
+                    BS_AUTORADIOBUTTON,302,255,86,12
+    PUSHBUTTON      "全部删除",IDC_REMOVEALL,247,254,50,14
+    LTEXT           "",IDC_MINI,349,0,20,8
+    LTEXT           "",IDC_CLOSE,365,0,25,10
+    LTEXT           "",IDC_LOGO,0,0,8,8
+    LTEXT           "",IDC_VOICEBMP,307,31,16,8
+    CONTROL         "Slider1",IDC_VOICE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,318,33,73,6
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 495, 72
+STYLE DS_CENTER | WS_POPUP
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 14, "薛文轩钢笔楷体"
+BEGIN
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 132, 68
+STYLE WS_POPUP | WS_BORDER
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "是",IDOK,90,42,31,14
+    PUSHBUTTON      "否",IDCANCEL,17,42,31,14
+    LTEXT           "是否最小化到托盘？",IDC_STATIC,19,8,77,15
+    CONTROL         "不再提示",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,20,27,
+                    51,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "YouYouPlayer Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "YouYouPlayer\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "YouYouPlayer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "YouYouPlayer 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 234
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 131
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\hand2.cur"
+IDC_CURSOR2             CURSOR  DISCARDABLE     "res\\hand1.cur"
+IDC_CURSOR3             CURSOR  DISCARDABLE     "res\\cursorHand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\Button_min_02.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\Button_close_00.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\Button_close_01.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\Button_min_00.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\9004.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\laba_1.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\laba_0.bmp"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "res\\13.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 YouYouPlayer(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\YouYouPlayer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
